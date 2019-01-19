@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: e5a676435e90042539ccf64c3f69f79e
+  - enabled: 1
+    path: Assets/Scenes/LowVisionEnlarge.unity
+    guid: 22868bdbb68573844b6131a88b4619c7
   m_configObjects: {}

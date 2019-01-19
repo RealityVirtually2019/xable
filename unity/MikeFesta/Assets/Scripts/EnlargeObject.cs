@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class EnlargeObject : MonoBehaviour
 {
-
+    public Camera vrCamera;
     public GameObject objectToEnlarge;
-    public float targetDistance = 1;
+    public float targetDistance = 4;
+    public float enlargedScale = 5;
 
     private bool enlarged;
     private Vector3 originalLocation;
@@ -22,16 +23,14 @@ public class EnlargeObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        //if (Input.GetKeyDown(KeyCode.Space))
+        if (GvrControllerInput.AppButtonUp)
         {
-            if (this.enlarged)
-            {
-                this.SetOriginalSize(this.objectToEnlarge);
-            }
-            else
-            {
-                this.Enlarge(this.objectToEnlarge);
-            }
+            this.SetOriginalSize(this.objectToEnlarge);
+        }
+        else if (GvrControllerInput.AppButtonDown && !this.enlarged)
+        {
+            this.Enlarge(this.objectToEnlarge);
         }
     }
 
@@ -45,7 +44,6 @@ public class EnlargeObject : MonoBehaviour
 
     void SetOriginalSize(GameObject o)
     {
-        o.transform.parent = null; // This should move back to Enlarge after the position is set, it is only here for testing
         o.transform.position = this.originalLocation;
         o.transform.localScale = this.originalScale;
         o.transform.eulerAngles = this.originalRotationEuler;
@@ -55,14 +53,16 @@ public class EnlargeObject : MonoBehaviour
 
     void Enlarge(GameObject o)
     {
-        //o.transform.localScale = new Vector3(3,3,3);
-        //o.transform.position = Camera.main.transform.position + Camera.main.transform.forward * this.targetDistance;
-        o.transform.parent = Camera.main.transform;
+        o.transform.localScale = new Vector3(enlargedScale,enlargedScale,enlargedScale);
+        //o.transform.position = vrCamera.transform.position + vrCamera.transform.forward * this.targetDistance;
+        o.transform.parent = vrCamera.transform;
         // NOTE: The neck model appears to be doing something weird here - head angle changes where the object moves to
-        o.transform.localPosition = Camera.main.transform.forward * this.targetDistance;
-
+        Debug.Log(vrCamera.transform.eulerAngles);
+        o.transform.eulerAngles = vrCamera.transform.eulerAngles;
+        Debug.Log(vrCamera.transform.forward);
+        o.transform.localPosition = vrCamera.transform..forward * this.targetDistance;
+        o.transform.parent = null; // This should move back to Enlarge after the position is set, it is only here for testing
         // Matching camera rotation may or may not be desired - needs more testing
-        //o.transform.eulerAngles = Camera.main.transform.eulerAngles;
         this.enlarged = true;
     }
 }

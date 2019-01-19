@@ -36,7 +36,8 @@ public class LowVisionToggle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha0))
+        //if (Input.GetKeyDown(KeyCode.Alpha0))
+        if (GvrControllerInput.AppButtonUp)
         {
             SetState(VisionLevel.Full);
         }
@@ -60,7 +61,8 @@ public class LowVisionToggle : MonoBehaviour
         {
             SetState(VisionLevel.Low5);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        //else if (Input.GetKeyDown(KeyCode.Alpha6))
+        else if (GvrControllerInput.AppButtonDown)
         {
             SetState(VisionLevel.Low6);
         }
