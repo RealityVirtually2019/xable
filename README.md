@@ -11,5 +11,8 @@ Assets Used:
 HDRIs:
 https://hdrihaven.com/hdri/?c=low%20contrast&h=hall_of_finfish
 
+Microsoft HoloToolkit:
+https://github.com/Microsoft/MixedRealityToolkit-Unity/releases
+
 3D Models:
 http://digitallife3d.org/blacktip-shark
