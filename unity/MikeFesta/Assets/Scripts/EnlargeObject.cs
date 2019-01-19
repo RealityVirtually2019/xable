@@ -53,14 +53,14 @@ public class EnlargeObject : MonoBehaviour
 
     void Enlarge(GameObject o)
     {
+        Debug.Log(vrCamera.transform.localPosition);
         o.transform.localScale = new Vector3(enlargedScale,enlargedScale,enlargedScale);
         //o.transform.position = vrCamera.transform.position + vrCamera.transform.forward * this.targetDistance;
         o.transform.parent = vrCamera.transform;
-        // NOTE: The neck model appears to be doing something weird here - head angle changes where the object moves to
         Debug.Log(vrCamera.transform.eulerAngles);
         o.transform.eulerAngles = vrCamera.transform.eulerAngles;
         Debug.Log(vrCamera.transform.forward);
-        o.transform.localPosition = vrCamera.transform..forward * this.targetDistance;
+        o.transform.localPosition = vrCamera.transform.forward * this.targetDistance;
         o.transform.parent = null; // This should move back to Enlarge after the position is set, it is only here for testing
         // Matching camera rotation may or may not be desired - needs more testing
         this.enlarged = true;
