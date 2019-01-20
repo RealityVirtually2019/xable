@@ -120,7 +120,31 @@ Simulations to be uploaded to GitHUB.
 
 
 
-Beginnig to draft a resource of standard  informaton for developers coming out of this project
+Outline for resource of standard informaton for developers coming out of this project
+
+ASSETS
+
+DOCUMENTATION
+Feature Areas
+Required Software
+Getting started 
+Examples
+Helpful Links
+
+
+EXTERNAL
+
+PACKAGES 
+
+PROJECT SETTINGS
+
+CONTRIBUTING & CODING GUIDELINES
+--Open Source Terms of Use and Guideines
+--Coding Guidelines
+--Documentation Guide(s)
+--Feature/asset contributions Process
+--
+
 W3C/WAI categories for accessibility issues:
 --PHYSICAL
 --SPEECH
@@ -130,7 +154,12 @@ W3C/WAI categories for accessibility issues:
 --NEUROLOGICAL
 --AGE
 --TEMPORARY DISABILITY
-SITUATIONAL
+--SITUATIONAL
+
+HELP
+
+
+
 
 Assets used:
 --HDRIs: https://hdrihaven.com/hdri/?c=low%20contrast&h=hall_of_finfish
@@ -144,18 +173,27 @@ FUTURE VISION FOR OPEN SOURCE LIBRARY
   ideas/concepts teamhas brainstormed that are outside the scope of this project           
   BEYOND THE XR ACCESSIBLE BASELINE...
   
-  An open invitation to  all developers 
+  AN OPEN INVITATION to all developers to consider the sample scenarios that follow and contribute solutions
 
-
-PHYSICAL
-SPEECH
-VISUAL
-AUDITORY
-COGNITIVE
-NEUROLOGICAL
-AGE
-TEMPORARY DISABILITY
-SITUATIONAL- 
+    --PHYSICAL user scenarios...
+    
+    --SPEECH user scenarios...
+    
+    --VISUAL user scenarios...
+    
+    --AUDITORY user scenarios...
+    
+    --COGNITIVE user scenarios...
+    
+    --NEUROLOGICAL user scenarios...
+    
+    --AGE user scenarios...
+    
+    --TEMPORARY DISABILITY user scenarios...
+    
+    --SITUATIONAL- user scenarios...
+    
+    FEEL FREE TO ADD YOUR EXAMPLES TO THE ABOVE LIST!
 
  
 
