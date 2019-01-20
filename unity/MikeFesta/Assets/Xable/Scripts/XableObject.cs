@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cakeslice;
 
 public class XableObject : MonoBehaviour
 {
@@ -19,11 +20,13 @@ public class XableObject : MonoBehaviour
     private Vector3 originalPosition;
     private Vector3 originalRotation;
     private Vector3 originalScale;
+    private Renderer renderer;
 
     // Start is called before the first frame update
     void Start()
     {
         this.xable = Object.FindObjectOfType<XableController>();
+        this.renderer = this.gameObject.GetComponentInChildren<Renderer>();
     }
 
     // Update is called once per frame
@@ -48,6 +51,17 @@ public class XableObject : MonoBehaviour
     {
         // This is similar to the TabFocus HTML attribute in HTML
         return (this == this.xable.activeObject);
+    }
+
+    public void Highlight()
+    {
+        this.renderer.gameObject.AddComponent<Outline>();
+        // TODO: prevent this from adding multiple
+    }
+
+    public void Unhighlight()
+    {
+        Destroy(this.renderer.gameObject.GetComponent<Outline>());
     }
 
     void EnlargeScale()
@@ -76,6 +90,7 @@ public class XableObject : MonoBehaviour
                 this.transform.parent = null;
             }
             this.enlarged = true;
+            this.Unhighlight();
         }
     }
 
@@ -92,6 +107,10 @@ public class XableObject : MonoBehaviour
                 this.transform.eulerAngles = this.originalRotation;
             }
             this.enlarged = false;
+            if (this.HasFocus())
+            {
+                this.Highlight();
+            }
         }
     }
 }

@@ -40,6 +40,7 @@ public class XableController : MonoBehaviour
     void CycleActiveObjectForward()
     {
         this.activeObject.RestoreScale();
+        this.activeObject.Unhighlight();
         if (this.activeObjectIndex + 1 < this.objects.Length)
         {
             this.SetActiveObjectByIndex(this.activeObjectIndex + 1);
@@ -56,6 +57,7 @@ public class XableController : MonoBehaviour
         {
             this.activeObject = this.objects[i];
             this.activeObjectIndex = i;
+            this.activeObject.Highlight();
         }
     }
 }
