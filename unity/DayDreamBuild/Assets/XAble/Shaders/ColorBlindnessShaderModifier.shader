@@ -77,7 +77,7 @@ Shader "XAble/ColorBlindness"
 
 				#ifdef ADJUSTMENT
 				fixed4 pattern = fixed4(
-					abs(col.r - redPat.r) * _PR[0] + abs(col.g - redPat.r) * _PR[1] + abs(col.b - redPat.r) * _PR[2], 
+					abs(col.r - redPat.r) * (1-_PR[0]) + abs(col.g - redPat.r) * (1-_PR[1]) + abs(col.b - redPat.r) * (1-_PR[2]), 
 					abs(col.r - greenPat.g) * _PG[0] + abs(col.g - greenPat.g) * _PG[1] + abs(col.b - greenPat.r) * _PG[2],
 					1, 
 					redPat.a);
