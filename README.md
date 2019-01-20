@@ -58,13 +58,16 @@ We beagn by establishing projectgoals/priorities,roles/responsibilities and pref
  
 DAY 1 
        ACTIVITIES:
+       
        -Pitch problem/solution
+       
        -Recruit Team 
+       
        -Define Scope, constraints & priorities
+       
        -Establish Goals
        
-       OUTPUTS:
-       -Goals:
+       OUTPUTS: Define d approach using collectve work experiences and Design Thinking methods. Also agreed upon the following project            goals/aspirations:
              -Shine a spotlight on expanding digital divide that excludes people of all ages with disabilities from experiencing  XR and                pursuing social, entertainment, educational and career opportunities.
              -Explore/experiment on ways to close the accessibility gap by extending ADA 508 guidelines and principles to common functions              seen across XR platforms/devices. 
              -Prototype elements for an open-source toolkit  that helps developers  add accessible features/functionality into current/                future XR experiences.
@@ -74,13 +77,21 @@ DAY 1
 DAY 2  ACTIVITIES:
        -Brainstorm needs and opportunities
        -Research features/functionality gaps and impacts
-       -Experiment across platforms & devices 
+       -Experiment across platforms & devices
+       
        OUTPUTS: Testing with... zoom controls, object outlines; with color contrast patterns shading and strategic color palette; with air        motion controls t adapt to limited motor skills  
 
 
 DAY 3
       ACTIVITIES:
-      OUTPUTS:
+      -Define scenarios 
+      -Begin prototyping
+      -Continue testing
+      -Continue documenting 
+      -Update devpost; draft video
+      -Update GitHUB
+
+      OUTPUTS:  defined sample user scenarios;Draft entry in GitHUB; preliminary prototypes/simulations, mulitple small test for low             vision, limited motion, spatial navidgation functions; draft video of one simulation; powerpoint capturing project journey; search         and integrate multiple 3D images
 
 DAY 4
       ACTIVITIES:
