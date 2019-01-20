@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Xable : MonoBehaviour
+public class XableObject : MonoBehaviour
 {
 
     public string AltText;
@@ -12,29 +12,26 @@ public class Xable : MonoBehaviour
     //Haptics;
     //ClickAction - enlarge, animate
 
-
-    private ADASettings adaSettings;
-    private ADAInput adaInput;
+    private XableController xable;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.adaSettings = Object.FindObjectOfType<ADASettings>();
-        this.adaInput = Object.FindObjectOfType<ADAInput>();
+        this.xable = Object.FindObjectOfType<XableController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-       // Based on the bool flags in the ADA settings, perform different actions on this game object
-       if (this.adaSettings.LowVision)
+       // Based on the bool flags in the Xable settings, perform different actions on this game object
+       if (this.xable.settings.LowVision)
        {
           // TODO: Change this to an event listener based model - this is just for quick testing
-          if (this.adaInput.SelectAction() && this.InFocus())
+          if (this.xable.input.SelectAction() && this.InFocus())
           {
               this.EnlargeScale();
           }
-          else if (this.adaInput.DeselectAction())
+          else if (this.xable.input.DeselectAction())
           {
               this.RestoreScale();
           }
@@ -50,7 +47,7 @@ public class Xable : MonoBehaviour
 
     void EnlargeScale()
     {
-        this.transform.localScale = new Vector3(this.adaSettings.EnlargeScale,this.adaSettings.EnlargeScale,this.adaSettings.EnlargeScale);
+        this.transform.localScale = new Vector3(this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale);
         // TODO: Center in front of the user
     }
 

@@ -1,0 +1,4 @@
+Usage Instructions:
+  1. Add the XableController prefab anyway in the scene.
+  2. Toggle settings as needed, eventually we would like to read these settings from the OS level of the device
+  3. Attach the XableObject script to any object in your scene that you want to X-enable.
