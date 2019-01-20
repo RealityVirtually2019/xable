@@ -15,7 +15,7 @@ INTRODUCTION
 This team is keenly aware that as XR infiltrates our personal, business, social, and educational lives, there is a swath of the population worldwide that are being left behind, just as they were when web/mobile solutions were first being introduced- before ADA 508 compliance started getting government and commercial entities to pay attention to the needs of the disabled.  
 
 Team Background & Motivations
--- Scott
+-- Scott is a creative technologist and interactive designer with nearly 2 decades worth of experience designing and building interactive experiences.  He currently works for Pega Systems as an Innovation and Experience Manager. His previous work includes clients such as MINI Cooper, Fidelity, Puma, Converse, AthenaHealth, and Comcast.
 
 -- Jordan
 
@@ -23,7 +23,7 @@ Team Background & Motivations
 
 -- Franco
 
--- Susan-is an educator/entrepreneur; previously managed a UX agency in global consulting firm for 10 years,advocated for web/mobile accessibiliy with commercial and govt.clients including US Dept. of Education for 7 years 
+-- Susan-is an educator/entrepreneur and former Director of Digital Strategy at Harvard University; previously managed a UX agency in global consulting firm for 10 years, advocated for and delivered web/mobile accessibiliy with commercial/govt.clients including US Dept. of Education for 7 years. On a personal note, her husband has MS with cognitive/motor issues. He has tried and struggled with XR experiences
 
           
 
@@ -57,21 +57,20 @@ Vision-impared user may ahve difficulty reading labels, navigating      Function
 HACKATHON SCOPE- goals, constraints and theory of change for open source solution
 
 APPROACH-based on Design Thinking, inspired by ADA 508 guidelines and W3C/WAI initiative for web/mobile
+ Design Thinking was the foundation of our process
 
-FUTURE VISION FOR OPEN SOURCE LIBRARY
 
-An open invitation to  all developers to create and share with community
-PHYSICAL
-SPEECH
-VISUAL
-AUDITORY
-COGNITIVE
-NEUROLOGICAL
-AGE
-TEMPORARY DISABILITY
-SITUATIONAL
+GitHUB DELIVERABLE
+(standard  informaton for developers coming out of this project)
 
-GitHUB DELIVERABLE- standard  informaton for developers cming out of this project
+
+Assets used:
+--HDRIs: https://hdrihaven.com/hdri/?c=low%20contrast&h=hall_of_finfish
+
+--Microsoft HoloToolkit: https://github.com/Microsoft/MixedRealityToolkit-Unity/releases
+
+--3D Models: http://digitallife3d.org/blacktip-shark
+
 
 FUTURE VISION FOR OPEN SOURCE LIBRARY
   ideas/concepts teamhas brainstormed that are outside the scope of this project           
