@@ -21,6 +21,7 @@ public class XableTextViewer : MonoBehaviour
     {
         this.renderers = this.gameObject.GetComponentsInChildren<Renderer>();
         this.xable = Object.FindObjectOfType<XableController>();
+        this.Hide();
     }
 
     // Update is called once per frame
@@ -42,9 +43,12 @@ public class XableTextViewer : MonoBehaviour
 
     public void Hide()
     {
-        foreach (Renderer r in this.renderers)
+        if (this.renderers != null)
         {
-            r.enabled = false;
+            foreach (Renderer r in this.renderers)
+            {
+                r.enabled = false;
+            }
         }
     }
 

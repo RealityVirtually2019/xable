@@ -8,6 +8,7 @@ public class XableObject : MonoBehaviour
 
     public string AltText;
     public Texture HighContrast;
+    public AudioClip AudioClip;
     //ColorPallet;
     //AudioFile;
     //Haptics;
@@ -54,6 +55,12 @@ public class XableObject : MonoBehaviour
             else if (this.xable.input.HideAltTextAction())
             {
                 this.HideAltText();
+            }
+
+            // Audio
+            if (this.xable.input.PlayAudioAction() && this.HasFocus())
+            {
+                this.PlayAudio();
             }
         }
     }
@@ -147,5 +154,21 @@ public class XableObject : MonoBehaviour
     {
         this.showingText = false;
         this.xable.TextViewer.Hide();
+    }
+
+    public void PlayAudio()
+    {
+        if (this.AudioClip != null)
+        {
+            // Play the audio clip (if there is one)
+            //this.audioClip.Play();
+            this.xable.PlayAudio(this.AudioClip);
+        }
+        else
+        {
+            // If there is no audio clip, use a Text-to-speech service to play thet Alt Text
+            Debug.Log("No Audio Clip Found");
+            // TODO: Text to speech service
+        }
     }
 }

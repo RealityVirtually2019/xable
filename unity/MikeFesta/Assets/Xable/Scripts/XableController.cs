@@ -13,7 +13,7 @@ public class XableController : MonoBehaviour
     public XableSettings settings;
     [HideInInspector]
     public Camera camera;
-
+    public AudioSource audioSource;
     [HideInInspector]
     private XableObject[] objects;
     private int activeObjectIndex;
@@ -27,6 +27,7 @@ public class XableController : MonoBehaviour
         this.TextViewer.Hide();
         this.input = this.gameObject.GetComponent<XableInput>();
         this.settings = this.gameObject.GetComponent<XableSettings>();
+        this.audioSource = this.gameObject.GetComponent<AudioSource>();
         this.camera = Camera.main;
         this.objects = GameObject.FindObjectsOfType<XableObject>();
         this.SetActiveObjectByIndex(0);
@@ -65,4 +66,9 @@ public class XableController : MonoBehaviour
         }
     }
 
+    public void PlayAudio(AudioClip a)
+    {
+        this.audioSource.clip = a;
+        this.audioSource.Play();
+    }
 }
