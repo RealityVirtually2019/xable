@@ -52,7 +52,7 @@ APPROACH-based on Design Thinking,
 
 We're taking an accelerated approach to the Hackathon project, based on the Design Thinking methodology. We're also leveraging our team's ast experiences and building on the foundation pf accessibility support for web/mobile established by ADA 508 guidelines and the work of W3C/WAI for web/mobile.
 
-We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs                                  
+We began by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs                                  
  
 DAY 1 
        ACTIVITIES:
@@ -120,7 +120,8 @@ Simulations to be uploaded to GitHUB.
 
 
 
-Outline for resource of standard informaton for developers coming out of this project
+OUTLINE FOR RESOURCE LIBRARY OF STANDARD INFORMATION FOR DEVELOPERS - a starting point for next steps...
+
 
 ASSETS
 
@@ -133,27 +134,45 @@ Assets used:
 
 
 DOCUMENTATION
-Feature Areas
-Required Software
-Getting started 
-Examples
-Helpful Links
+
+--Feature Areas
+
+-- Platforms
+
+--Required Software
+
+--Getting started
+
+--Accessiblity Examples
+
+
+--Helpful Links
+
+https://www.w3.org/WAI/
 
 
 EXTERNAL
 
+
 PACKAGES 
 
+
 PROJECT SETTINGS
+
 
 CONTRIBUTING & CODING GUIDELINES
 
  --Open Source Terms of Use and Guideines
+ 
  --Coding Guidelines
+ 
  --Documentation Guide(s)
+ 
  --Feature/asset Contributions Process
+ 
 
 W3C/WAI categories for accessibility issues:
+
 --PHYSICAL
 --SPEECH
 --VISUAL
@@ -169,7 +188,13 @@ HELP
 
 FUTURE VISION FOR OPEN SOURCE LIBRARY
 
-  ideas/concepts teamhas brainstormed that are outside the scope of this Hackathon project           
+  A  small sampling of the many ideas/concepts  our team has brainstormed that are outside the scope of this Hackathon project  
+  
+  https://trello.com/b/0n6Rkzah/functional-trends
+  
+  https://trello.com/b/h609FPhv/brainstorm-1-w3c-categories
+ 
+  
   BEYOND THE XR ACCESSIBLE BASELINE...
   
   -- Customize voice like avatar: Offer ability to personalize experience with ability to voiceover record own voice as verbal commands  in X experience.
