@@ -35,29 +35,22 @@ There are 650 million people, 10% of the world's population, with some form of d
 
 We're exploring ways to close the growing accessibility divide within XR by visualizing an open-source toolkit for developers that helps them integrate support for users with disabilities. Our theory of action is that by taking a cross-platform compliance approach to resolving accesibility issues, developers will be more inclined to include accessibility support when creating new XR experiences. Based on the  four W3C/WAI principles (perceivable, operable, understandable,and robust) we believe that the ADA 508 compliance guidelines for web/mobile set a powerful precedent that should be extended to XR.
 
-We're keenly aware that there are recurring accessibility issues that may be common across mulitple platorms. If we begin with the most common challenges, then a new XR accessibility baseline could be established. From there, the possibilities are endless. we've brainstormed about these options as well.
-
-W3C/WAI categories for accessibility issues:
-PHYSICAL
-SPEECH
-VISUAL
-AUDITORY
-COGNITIVE
-NEUROLOGICAL
-AGE
-TEMPORARY DISABILITY
-SITUATIONAL
+We're keenly aware that there are recurring accessibility issues that may be common across mulitple platorms. If we begin with the most common challenges, then a new XR accessibility baseline could be established. From there, the possibilities are endless. we've brainstormed about these options as well using the W3C/WAI categories for accessibility issues to guide discussions.Categories are as follows:PHYSICAL,SPEECH, VISUAL,AUDITORY, COGNITIVE, NEUROLOGICAL, AGE, TEMPORARY DISABILITY, SITUATIONAL.
 
 Here are 2 examples of the common accessibility challenges and ways we might address:possible responses: 
-1. Color-blind user can't distinguish red-green or blue-yellow spectrums. To address that, the icon colors go into a high contrast mode or pattern overlay helps to distinguish color differences
-2. Vision-impaired user may have difficulty reading labels or navigating XR space. To address that, a function could be enabled to allow user to enlarge elements when selected in 3D space
+  1. Color-blind user can't distinguish red-green or blue-yellow spectrums. To address that, the icon colors go into a high contrast mode   or pattern overlay helps to distinguish color differences
+  2. Vision-impaired user may have difficulty reading labels or navigating XR space. To address that, a function could be enabled to allow user to enlarge elements when selected in 3D space
 
+HACKATHON SCOPE- 
 
-HACKATHON SCOPE- goals, constraints and theory of change for open source solution
+We will explore and experiement ways to close the accessibility divide within XR by visualizing a open-source toolkit for developers that helps them integrate support users with disabilities. 
+We envision a strategy that focuses on cross-platform compliance. With this in mind, we'll be selective when choosing 3-4 functions to simulate/protoype.
+
+Our theory of change is that is we shine a spotlight on accessibility issues, demonstrate ways to think about/resolve accessibility issues collaboratively, then we can build momentum for open sources solutions for accessibility. Ultimately we envision users with disabilities wll have more and more opportunities to enter th XR realm of amazing experiences. 
 
 APPROACH-based on Design Thinking, 
 
-We're taking an accelerated approach to the Hackathon project, based on the Design Thinking methodology. We're also leveragin our team's ast experiences and building on the foundation pf accessibility support for web/mobile established by ADA 508 guidelines and the work of W3C/WAI for web/mobile.
+We're taking an accelerated approach to the Hackathon project, based on the Design Thinking methodology. We're also leveraging our team's ast experiences and building on the foundation pf accessibility support for web/mobile established by ADA 508 guidelines and the work of W3C/WAI for web/mobile.
 
 We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs  
 
