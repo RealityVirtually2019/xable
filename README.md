@@ -15,15 +15,16 @@ INTRODUCTION
 This team is keenly aware that as XR infiltrates our personal, business, social, and educational lives, there is a swath of the population worldwide that are being left behind, just as they were when web/mobile solutions were first being introduced- before ADA 508 compliance started getting government and commercial entities to pay attention to the needs of the disabled.  
 
 Team Background & Motivations
+
 -- Scott is a creative technologist and interactive designer with nearly 2 decades worth of experience designing and building interactive experiences.  He currently works for Pega Systems as an Innovation and Experience Manager. His previous work includes clients such as MINI Cooper, Fidelity, Puma, Converse, AthenaHealth, and Comcast.
 
--- Jordan
+-- Jordan leads immersive design at ByteCubed + CHIEF, teaches design as adjunct faculty at George Mason University, and currently serves as President of UXPA DC. Previously he worked in the Department of Defense and United States Senate helping government make digital experiences to be more accessible and inclusive, and is passionate about ensuring that nobody is left behind by emerging technology like XR
 
 -- Mike
 
 -- Franco
 
--- Susan-is an educator/entrepreneur and former Director of Digital Strategy at Harvard University; previously managed a UX agency in global consulting firm for 10 years, advocated for and delivered web/mobile accessibiliy with commercial/govt.clients including US Dept. of Education for 7 years. On a personal note, her husband has MS with cognitive/motor issues. He has tried and struggled with XR experiences
+-- Susan-is an educator/entrepreneur and former Director of Digital Strategy at Harvard University; previously managed a UX agency in global consulting firm for 10 years, advocated for and delivered web/mobile accessibiliy with commercial/govt.clients including US Dept. of Education for 7 years. On a personal note, her husband has MS with cognitive/motor issues. He has tried and struggled with XR experiences.
 
           
 
@@ -57,8 +58,21 @@ Vision-impared user may ahve difficulty reading labels, navigating      Function
 
 HACKATHON SCOPE- goals, constraints and theory of change for open source solution
 
-APPROACH-based on Design Thinking, inspired by ADA 508 guidelines and W3C/WAI initiative for web/mobile
- Design Thinking was the foundation of our process
+APPROACH-based on Design Thinking, 
+
+We're taking an accelerated approach to the Hackathon project, based on the Design Thinking methodology. We're also leveragin our team's ast experiences and building on the foundation pf accessibility support for web/mobile established by ADA 508 guidelines and the work of W3C/WAI for web/mobile.
+
+We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs.  
+
+                                 ACTIVITIES                                     OUTPUTS
+ 
+DAY 1                                
+
+DAY 2
+
+DAY 3
+
+DAY 4
 
 
 GitHUB DELIVERABLE
