@@ -21,7 +21,7 @@ Team Background & Motivations
 
 -- Jordan leads immersive design at ByteCubed + CHIEF, teaches design as adjunct faculty at George Mason University, and currently serves as President of UXPA DC. Previously he worked in the Department of Defense and United States Senate helping government make digital experiences to be more accessible and inclusive, and is passionate about ensuring that nobody is left behind by emerging technology like XR
 
--- Mike
+-- Mike is the Boston chapter president of the VR/AR Association and recently left his position as Director of Wayfair Next to create a new company for 3D content creation. On a personal note, Mike has a son withlow vision and color recgognition shallenges who generously tested some ideas with his Dad.
 
 -- Franco
 
@@ -52,9 +52,7 @@ APPROACH-based on Design Thinking,
 
 We're taking an accelerated approach to the Hackathon project, based on the Design Thinking methodology. We're also leveraging our team's ast experiences and building on the foundation pf accessibility support for web/mobile established by ADA 508 guidelines and the work of W3C/WAI for web/mobile.
 
-We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs  
-
-                                 ACTIVITIESOUTPUTS                                    
+We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs                                  
  
 DAY 1 
        ACTIVITIES:
@@ -75,15 +73,20 @@ DAY 1
 
 
 DAY 2  ACTIVITIES:
+
        -Brainstorm needs and opportunities
+       
        -Research features/functionality gaps and impacts
+       
        -Experiment across platforms & devices
+    
        
        OUTPUTS: Testing with... zoom controls, object outlines; with color contrast patterns shading and strategic color palette; with air        motion controls t adapt to limited motor skills  
 
 
 DAY 3
       ACTIVITIES:
+      
       -Define scenarios
       
       -Begin prototyping
@@ -101,8 +104,11 @@ DAY 3
 DAY 4
       ACTIVITIES:
       -Final cycles of Iterating/testing
+      
       -Design set of accessible icons 
+      
       -Update video, docs, and share 
+      
       -Focus on final deliverables
 
       OUTPUTS: final testing/completing simulations; design accessible icons; update GirtHUB README files; final uploads to GitHUB
