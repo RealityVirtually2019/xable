@@ -33,7 +33,7 @@ public class XableObject : MonoBehaviour
        if (this.xable.settings.LowVision)
        {
           // TODO: Change this to an event listener based model - this is just for quick testing
-          if (this.xable.input.SelectAction() && this.InFocus())
+          if (this.xable.input.SelectAction() && this.HasFocus())
           {
               this.EnlargeScale();
           }
@@ -44,11 +44,10 @@ public class XableObject : MonoBehaviour
        }
     }
 
-    bool InFocus()
+    bool HasFocus()
     {
-        // TODO: Come up with a universal way to have one Xable object in focus at a time
-        // This should be similar to the TabFocus HTML attribute in HTML
-        return true;
+        // This is similar to the TabFocus HTML attribute in HTML
+        return (this == this.xable.activeObject);
     }
 
     void EnlargeScale()
@@ -56,8 +55,11 @@ public class XableObject : MonoBehaviour
         if (!this.enlarged)
         {
             this.originalScale = this.transform.localScale;
-            Debug.Log(this.originalScale);
-            this.transform.localScale = new Vector3(this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale);
+            this.transform.localScale = new Vector3(
+                this.transform.localScale.x * this.xable.settings.EnlargeScale,
+                this.transform.localScale.y * this.xable.settings.EnlargeScale,
+                this.transform.localScale.z * this.xable.settings.EnlargeScale
+            );
 
             if (this.xable.settings.BringEnlargedClose)
             {
@@ -77,7 +79,7 @@ public class XableObject : MonoBehaviour
         }
     }
 
-    void RestoreScale()
+    public void RestoreScale()
     {
         if (this.enlarged)
         {
