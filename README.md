@@ -3,6 +3,9 @@ INTRODUCTION
 
 Closing the XR Divide 
 
+INSERT DAVID'S STORY...
+
+
 There are 650 million people, 10% of the world's population, with some form of disability. Imagine if you were one of them, with a hearing or vision impairment or limited motor skills trying to engage in an XR experience? What if you were among the 8% of men who have some form of color blindness and could not distinguish colors in the XR space or to use controls? 
 
 We're exploring ways to close the growing accessibility divide within XR by visualizing an open-source toolkit for developers that helps them integrate support for users with disabilities. Our theory of action is that by taking a cross-platform compliance approach to resolving accesibility issues, developers will be more inclined to include accessibility support when creating new XR experiences. Based on the  four W3C/WAI principles (perceivable, operable, understandable,and robust) we believe that the ADA 508 compliance guidelines for web/mobile set a powerful precedent that should be extended to XR.
@@ -31,6 +34,12 @@ NEUROLOGICAL
 AGE
 TEMPORARY DISABILITY
 SITUATIONAL
+
+
+BEYOND THE XR ACCESSIBLE BASELINE...EXPANDING THE POSSIBILITIES:
+
+INSERT EXAMPLES 
+
 
 
 Assets Used:
