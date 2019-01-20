@@ -5,6 +5,8 @@ using UnityEngine;
 public class XableController : MonoBehaviour
 {
 
+
+    public XableTextViewer TextViewer;
     [HideInInspector]
     public XableInput input;
     [HideInInspector]
@@ -21,6 +23,8 @@ public class XableController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        this.TextViewer = GameObject.FindObjectOfType<XableTextViewer>();
+        this.TextViewer.Hide();
         this.input = this.gameObject.GetComponent<XableInput>();
         this.settings = this.gameObject.GetComponent<XableSettings>();
         this.camera = Camera.main;
@@ -60,4 +64,5 @@ public class XableController : MonoBehaviour
             this.activeObject.Highlight();
         }
     }
+
 }

@@ -32,4 +32,14 @@ public class XableInput : MonoBehaviour
     {
         return (GvrControllerInput.ClickButtonDown || Input.GetKeyDown(KeyCode.Tab));
     }
+
+    public bool ShowAltTextAction()
+    {
+        return Input.GetKey(KeyCode.LeftControl);
+    }
+
+    public bool HideAltTextAction()
+    {
+        return Input.GetKeyUp(KeyCode.LeftControl);
+    }
 }

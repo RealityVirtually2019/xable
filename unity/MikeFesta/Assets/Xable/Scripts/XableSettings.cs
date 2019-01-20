@@ -10,6 +10,7 @@ public class XableSettings : MonoBehaviour
     public float EnlargeScale = 3;
     public bool BringEnlargedClose;
     public float UpcloseDistance = 2;
+    public int WordVisibleTime = 100; // Number of update loops for each word - this should be changed to a time value so it is not framerate dependant
 
 
     // Start is called before the first frame update

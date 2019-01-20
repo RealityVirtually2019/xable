@@ -21,6 +21,7 @@ public class XableObject : MonoBehaviour
     private Vector3 originalRotation;
     private Vector3 originalScale;
     private Renderer renderer;
+    private bool showingText;
 
     // Start is called before the first frame update
     void Start()
@@ -32,19 +33,29 @@ public class XableObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // Based on the bool flags in the Xable settings, perform different actions on this game object
-       if (this.xable.settings.LowVision)
-       {
-          // TODO: Change this to an event listener based model - this is just for quick testing
-          if (this.xable.input.SelectAction() && this.HasFocus())
-          {
-              this.EnlargeScale();
-          }
-          else if (this.xable.input.DeselectAction())
-          {
-              this.RestoreScale();
-          }
-       }
+        // Based on the bool flags in the Xable settings, perform different actions on this game object
+        if (this.xable.settings.LowVision)
+        {
+            // TODO: Change this to an event listener based model - this is just for quick testing
+            if (this.xable.input.SelectAction() && this.HasFocus())
+            {
+                this.EnlargeScale();
+            }
+            else if (this.xable.input.DeselectAction())
+            {
+                this.RestoreScale();
+            }
+
+            // Also a Low Vision Aid - Displaying the alt text up close
+            if (this.xable.input.ShowAltTextAction() && this.HasFocus())
+            {
+                this.ShowAltText();
+            }
+            else if (this.xable.input.HideAltTextAction())
+            {
+                this.HideAltText();
+            }
+        }
     }
 
     bool HasFocus()
@@ -59,7 +70,11 @@ public class XableObject : MonoBehaviour
         {
             this.renderer.gameObject.AddComponent<Outline>();
         }
-        // TODO: prevent this from adding multiple
+        else
+        {
+            // This object hasn't been initialized yet, so the cached renderer isn't available
+            this.gameObject.GetComponentInChildren<Renderer>().gameObject.AddComponent<Outline>();
+        }
     }
 
     public void Unhighlight()
@@ -115,5 +130,22 @@ public class XableObject : MonoBehaviour
                 this.Highlight();
             }
         }
+    }
+
+    public void ShowAltText()
+    {
+        if (!this.showingText)
+        {
+            Debug.Log(this.AltText);
+            this.xable.TextViewer.LoadText(this.AltText);
+            this.showingText = true;
+        }
+
+    }
+
+    public void HideAltText()
+    {
+        this.showingText = false;
+        this.xable.TextViewer.Hide();
     }
 }
