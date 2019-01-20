@@ -31,7 +31,7 @@ public class XableController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (this.input.CycleActiveObject())
         {
             this.CycleActiveObjectForward();
         }

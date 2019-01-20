@@ -27,4 +27,9 @@ public class XableInput : MonoBehaviour
     {
         return (GvrControllerInput.AppButtonUp || Input.GetKeyUp(KeyCode.Space));
     }
+
+    public bool CycleActiveObject()
+    {
+        return (Input.GetKeyDown(KeyCode.Tab));
+    }
 }
