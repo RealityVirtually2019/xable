@@ -23,7 +23,7 @@ Team Background & Motivations
 
 -- Mike is the Boston chapter president of the VR/AR Association and recently left his position as Director of Wayfair Next to create a new company for 3D content creation. On a personal note, Mike has a son withlow vision and color recgognition shallenges who generously tested some ideas with his Dad.
 
--- Franco
+-- Frank O
 
 -- Susan-is an educator/entrepreneur and former Director of Digital Strategy at Harvard University; previously managed a UX agency in global consulting firm for 10 years, advocated for and delivered web/mobile accessibiliy with commercial/govt.clients including US Dept. of Education for 7 years. On a personal note, her husband has MS with cognitive/motor issues. He has tried and struggled with XR experiences.
 
