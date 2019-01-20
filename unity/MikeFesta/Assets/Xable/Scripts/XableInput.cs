@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ADAInput : MonoBehaviour
+public class XableInput : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -19,12 +19,12 @@ public class ADAInput : MonoBehaviour
     // This is where we can abstract input devices to communicate a select action
     public bool SelectAction()
     {
-        return GvrControllerInput.AppButtonDown;
+        return (GvrControllerInput.AppButtonDown || Input.GetKey(KeyCode.Space));
     }
 
     // This is where we can abstract input devices to communicate a deselect action
     public bool DeselectAction()
     {
-        return GvrControllerInput.AppButtonUp;
+        return (GvrControllerInput.AppButtonUp || Input.GetKeyUp(KeyCode.Space));
     }
 }
