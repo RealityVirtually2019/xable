@@ -1,9 +1,8 @@
-# xable
+# X-able: Closing the XR Divide
+
 INTRODUCTION
 
-Closing the XR Divide 
-
-INSERT DAVID'S STORY...
+          INSERT DAVID'S STORY...
 
 
 There are 650 million people, 10% of the world's population, with some form of disability. Imagine if you were one of them, with a hearing or vision impairment or limited motor skills trying to engage in an XR experience? What if you were among the 8% of men who have some form of color blindness and could not distinguish colors in the XR space or to use controls? 
