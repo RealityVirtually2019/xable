@@ -29,7 +29,6 @@ Team Background & Motivations
           
 
 PROBLEM
-(inclusivity issues encountered in XR; compelling data on how many impacted)
 
 There are 650 million people, 10% of the world's population, with some form of disability. Imagine if you were one of them, with a hearing or vision impairment or limited motor skills trying to engage in an XR experience? What if you were among the 8% of men who have some form of color blindness and could not distinguish colors in the XR space? 
 
@@ -48,13 +47,11 @@ AGE
 TEMPORARY DISABILITY
 SITUATIONAL
 
-Here are a few examples of the most common accessibility challenges and possible responses: 
+Here are 3-4 examples of the common accessibility challenges and ways we might address:possible responses: 
+1. Color-blind user can't distinguish red-green or blue-yellow spectrums. To address that, the icon colors go into a high contrast mode or pattern overlay helps to distinguish color differences
+2. Vision-impared user may have difficulty reading labels or navigating XR space. To address that, a function could be enabled to allow user to enlarge elements when selected in 3D space.
+3. 
 
-CHALLENGE                                                               COMPLIANCE 
-
-Color-blind user can't distinguish red-green or blue-yellow spectrums   The icon colors go into a high contrast mode or pattern overlay                                                                           helps to distinguish
-
-Vision-impared user may ahve difficulty reading labels, navigating      Function enabled to allow user to enlarge elements when selected in 3D space 
 
 HACKATHON SCOPE- goals, constraints and theory of change for open source solution
 
