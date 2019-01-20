@@ -9,6 +9,7 @@ public class XableSettings : MonoBehaviour
     public bool ColorBlind;
     public float EnlargeScale = 3;
     public bool BringEnlargedClose;
+    public float UpcloseDistance = 2;
 
 
     // Start is called before the first frame update
