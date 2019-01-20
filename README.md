@@ -124,6 +124,14 @@ Outline for resource of standard informaton for developers coming out of this pr
 
 ASSETS
 
+Assets used:
+--HDRIs: https://hdrihaven.com/hdri/?c=low%20contrast&h=hall_of_finfish
+
+--Microsoft HoloToolkit: https://github.com/Microsoft/MixedRealityToolkit-Unity/releases
+
+--3D Models: http://digitallife3d.org/blacktip-shark
+
+
 DOCUMENTATION
 Feature Areas
 Required Software
@@ -139,11 +147,11 @@ PACKAGES
 PROJECT SETTINGS
 
 CONTRIBUTING & CODING GUIDELINES
---Open Source Terms of Use and Guideines
---Coding Guidelines
---Documentation Guide(s)
---Feature/asset contributions Process
---
+
+ --Open Source Terms of Use and Guideines
+ --Coding Guidelines
+ --Documentation Guide(s)
+ --Feature/asset Contributions Process
 
 W3C/WAI categories for accessibility issues:
 --PHYSICAL
@@ -159,19 +167,30 @@ W3C/WAI categories for accessibility issues:
 HELP
 
 
-
-
-Assets used:
---HDRIs: https://hdrihaven.com/hdri/?c=low%20contrast&h=hall_of_finfish
-
---Microsoft HoloToolkit: https://github.com/Microsoft/MixedRealityToolkit-Unity/releases
-
---3D Models: http://digitallife3d.org/blacktip-shark
-
-
 FUTURE VISION FOR OPEN SOURCE LIBRARY
-  ideas/concepts teamhas brainstormed that are outside the scope of this project           
+
+  ideas/concepts teamhas brainstormed that are outside the scope of this Hackathon project           
   BEYOND THE XR ACCESSIBLE BASELINE...
+  
+  -- Customize voice like avatar: Offer ability to personalize experience with ability to voiceover record own voice as verbal commands  in X experience.
+  --Provide ability for user to know/confirm" where am I? with a range of options- via visual, sound, GPS  or vibration cue
+  
+  --Include dual options for navigating  with clear, consistent iconography color contrast, and voice over options.
+  
+  --Compensate for face blindness-pulling in his/her contacts/images into experience? for fictional experience embed descriptions of characters/players
+  
+  -- Allow user AND guide dog with sensor to participate as team in XR 
+  
+  --Compensate for hearing loss with  visual representation of actions  needed to perform function, emergency signals/ alerts 
+  
+  -- Give deaf person  ability to sing with gestures/movements/color /vibrations
+  
+  --For cognitive issues provide memory recall option to" repeat that again" for me- in text and/or visual representation
+  
+  -- For temporary issues Menu of options/settings   for on/off function that supports a variety of compensatory functions e.g. change brightness after a  an eye operation - then resume normal brightness when healed
+  
+  
+  
   
   AN OPEN INVITATION to all developers to consider the sample scenarios that follow and contribute solutions
 
@@ -196,8 +215,6 @@ FUTURE VISION FOR OPEN SOURCE LIBRARY
     FEEL FREE TO ADD YOUR EXAMPLES TO THE ABOVE LIST!
 
  
-
-
 
 Assets Used:
 HDRIs:
