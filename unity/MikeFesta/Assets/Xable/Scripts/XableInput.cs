@@ -30,6 +30,6 @@ public class XableInput : MonoBehaviour
 
     public bool CycleActiveObject()
     {
-        return (Input.GetKeyDown(KeyCode.Tab));
+        return (GvrControllerInput.ClickButtonDown || Input.GetKeyDown(KeyCode.Tab));
     }
 }

@@ -55,7 +55,10 @@ public class XableObject : MonoBehaviour
 
     public void Highlight()
     {
-        this.renderer.gameObject.AddComponent<Outline>();
+        if (this.renderer)
+        {
+            this.renderer.gameObject.AddComponent<Outline>();
+        }
         // TODO: prevent this from adding multiple
     }
 
