@@ -5,9 +5,9 @@
 # Write a line equal to 'overwrite-all' (without quotes) to overwrite everything (preserved accross builds)
 # Write a line equal to 'keep-all' (without quotes) to keep files regardless their modification (preserved accross builds)
 # Default behavior is to never overwrite files
-AdaptiveHoloLens.sln: 31AB731EF26CE919666F8EC7D7EF4125
-AdaptiveHoloLens\AdaptiveHoloLens.csproj: 91B9750062C309127C1C86491F43490A
-AdaptiveHoloLens\AdaptiveHoloLens.csproj.user: BEFB8AC4886C4CFDD3C68445D6F19B04
+AdaptiveHoloLens.sln: modified
+AdaptiveHoloLens\AdaptiveHoloLens.csproj: 9B931ED6739DC4A9B964474C8D96A4FD
+AdaptiveHoloLens\AdaptiveHoloLens.csproj.user: modified
 AdaptiveHoloLens\App.cs: 79EE31C5D748F1C5F2BDE4A43B409ACA
 AdaptiveHoloLens\Package.appxmanifest: 37F2D03F7FB5C113E26BBE7F01FB34F3
 AdaptiveHoloLens\project.json: 1D02BC64BAC0D041019673A1C4C51737
@@ -17,5 +17,13 @@ AdaptiveHoloLens\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D5649
 AdaptiveHoloLens\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
 AdaptiveHoloLens\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
 AdaptiveHoloLens\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+AdaptiveHoloLens\bin\x86\Release\AppX\Assets\SplashScreen.scale-200.png: A85C1D7624B6902CF8CEBD6F0200A826
+AdaptiveHoloLens\bin\x86\Release\AppX\Assets\Square150x150Logo.scale-200.png: E02834B4A5DFB97FF8E212C1CACBB084
+AdaptiveHoloLens\bin\x86\Release\AppX\Assets\Square44x44Logo.scale-200.png: 6C6EF27184ABE9D870A9D564953775DE
+AdaptiveHoloLens\bin\x86\Release\AppX\Assets\Square44x44Logo.targetsize-24_altform-unplated.png: 156637F7B5363E983E7A46D8E533A23D
+AdaptiveHoloLens\bin\x86\Release\AppX\Assets\StoreLogo.png: 90BD194CA4A7CFFF3E8B8222229857FB
+AdaptiveHoloLens\bin\x86\Release\AppX\Assets\Wide310x150Logo.scale-200.png: C96846A80DF667F87355569CD816192D
+AdaptiveHoloLens\bin\x86\Release\AppX\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
+AdaptiveHoloLens\obj\x86\Release\AdaptiveHoloLens.csproj.CopyComplete: D41D8CD98F00B204E9800998ECF8427E
 AdaptiveHoloLens\Properties\Default.rd.xml: 72EB282657164E79A1C42F6240984826
 GeneratedProjects\UWP\Assembly-CSharp\project.json: 1D02BC64BAC0D041019673A1C4C51737
