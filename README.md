@@ -7,7 +7,7 @@ NOTE to ALL: How the cotent in this READEME file is organized
 - HACKATHON SCOPE- goals, constraints and theory of change for open source solution
 - APPROACH-based on Design Thinking, inspired by ADA 508 guidelines and W3C/WAI initiative for web/mobile
 - GitHUB DELIVERABLE- standard  informaton for developers coming out of this project
-- FUTURE VISION FOR OPEN SOURCE LIBRARY- ideas/concepts teamhas brainstormed that are outside the scop of this project
+- FUTURE VISION FOR OPEN SOURCE LIBRARY- ideas/concepts that the team has brainstormed  but they that are outside the project scope 
 
 INTRODUCTION 
 (why this project? why now? why this team/why we care?)
