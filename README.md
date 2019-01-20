@@ -12,7 +12,8 @@ NOTE to ALL: How the cotent in this READEME file is organized
 INTRODUCTION 
 (why this project? why now? why this team/why we care?)
  
-This team is keenly aware that as XR infiltrates our personal, business, social, and educational lives, there is a swath of the population worldwide that are being left behind, just as they were when web/mobile solutions were first being introduced- before ADA 508 compliance started getting government and commercial entities to pay attention to the needs of the disabled.  
+This team is keenly aware that as XR infiltrates our personal, business, social, and educational lives, there's a swath of the population worldwide that are being left behind- just as they were when web/mobile solutions were first being introduced. Then ADA 508 compliance regulations started getting government and commercial entities to pay attention to the needs of the disabled when creating new web/mobile experiences. We believe that XR create an even bigger divide between those who can easily engage-and those who can't. Therefore we're taking this opportunity toat the RV Hackathon, to shine a spotlight on the challenges of accessibility, create starting point and invite developrs to collaborate  in the future on creating and maintaining an open-source library  that resolves accessibility issues in XR.  
+
 
 Team Background & Motivations
 
