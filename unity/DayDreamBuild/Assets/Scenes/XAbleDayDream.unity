@@ -228,7 +228,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh44872
+  m_Name: pb_Mesh46056
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -611,6 +611,7 @@ GameObject:
   - component: {fileID: 624597166}
   - component: {fileID: 624597165}
   - component: {fileID: 624597164}
+  - component: {fileID: 624597169}
   m_Layer: 0
   m_Name: Prism
   m_TagString: Untagged
@@ -871,6 +872,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624597169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624597163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4fa8c9347bf4a6180620fcbb34d506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AltText: 
+  HighContrast: {fileID: 0}
+  IsStatic: 1
+  colorBlindShaderName: XAble/ColorBlindness
 --- !u!1 &625910581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,7 +1950,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-74282
+  m_Name: pb_Mesh45978
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2100,6 +2117,7 @@ GameObject:
   - component: {fileID: 1345242250}
   - component: {fileID: 1345242249}
   - component: {fileID: 1345242248}
+  - component: {fileID: 1345242253}
   m_Layer: 0
   m_Name: Stairs
   m_TagString: Untagged
@@ -3236,13 +3254,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 44.169003, z: 0}
+--- !u!114 &1345242253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345242247}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4fa8c9347bf4a6180620fcbb34d506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AltText: 
+  HighContrast: {fileID: 0}
+  IsStatic: 1
+  colorBlindShaderName: XAble/ColorBlindness
 --- !u!43 &1393115658
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-67170
+  m_Name: pb_Mesh45860
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

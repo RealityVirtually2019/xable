@@ -28,6 +28,7 @@ public class XableObject : MonoBehaviour
 
     private Shader colorBlindShader;
     private float colorBlindToggle;
+    private float colorBlindAdjustment;
 
 
 
@@ -78,6 +79,28 @@ public class XableObject : MonoBehaviour
                 
                 //renderer.material.
                 Debug.Log(colorBlindToggle);
+            }
+            if (this.xable.input.TouchDown())
+            {
+
+                if (this.xable.input.TouchPos().y <= 0.25f)
+                {
+                    colorBlindAdjustment = 1.0f;
+                }
+                else
+                {
+                    colorBlindAdjustment = 0.0f;
+                }
+                renderer.material.SetFloat("_AdjustmentMode", colorBlindAdjustment);
+                if (colorBlindAdjustment == 1)
+                {
+                    renderer.material.EnableKeyword("ADJUSTMENT");
+                }
+                else
+                {
+                    renderer.material.DisableKeyword("ADJUSTMENT");
+                }
+                Debug.Log("touch down"+ this.xable.input.TouchPos().y+"  "+colorBlindAdjustment);
             }
 
         }

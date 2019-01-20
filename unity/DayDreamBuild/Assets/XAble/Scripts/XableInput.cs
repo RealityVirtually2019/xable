@@ -32,4 +32,19 @@ public class XableInput : MonoBehaviour
     {
         return (GvrControllerInput.ClickButtonDown || Input.GetKeyDown(KeyCode.Tab));
     }
+
+    public bool TouchDown()
+    {
+        return GvrControllerInput.TouchDown;
+    }
+
+    public bool TouchUp()
+    {
+        return GvrControllerInput.TouchUp;
+    }
+
+    public Vector2 TouchPos()
+    {
+        return GvrControllerInput.TouchPos;
+    }
 }
