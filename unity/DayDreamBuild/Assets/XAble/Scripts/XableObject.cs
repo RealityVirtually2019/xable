@@ -27,7 +27,7 @@ public class XableObject : MonoBehaviour
     private Renderer renderer;
 
     private Shader colorBlindShader;
-    private int colorBlindToggle;
+    private float colorBlindToggle;
 
 
 
@@ -58,14 +58,26 @@ public class XableObject : MonoBehaviour
        }
         if (this.xable.settings.ColorBlind)
         {
-            renderer.material.shader = colorBlindShader;
+           //renderer.material.shader = colorBlindShader;
         }
         if (this.xable.settings.ColorBlind)
         {
             if (this.xable.input.SelectAction())
             {
-                colorBlindToggle = (colorBlindToggle == 0) ? 1 : 0;
-                 renderer.material.SetFloat("_ProtaColorMode", colorBlindToggle);
+                colorBlindToggle = (colorBlindToggle == 0.0f) ? 1.0f : 0.0f;
+                
+                renderer.material.SetFloat("_ProtaColorMode", colorBlindToggle);
+                if (colorBlindToggle == 1)
+                {
+                    renderer.material.EnableKeyword("PROTANOPIA");
+                }
+                else
+                {
+                    renderer.material.DisableKeyword("PROTANOPIA");
+                }
+                
+                //renderer.material.
+                Debug.Log(colorBlindToggle);
             }
 
         }
