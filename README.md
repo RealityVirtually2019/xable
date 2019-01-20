@@ -48,10 +48,9 @@ AGE
 TEMPORARY DISABILITY
 SITUATIONAL
 
-Here are 3-4 examples of the common accessibility challenges and ways we might address:possible responses: 
+Here are 2 examples of the common accessibility challenges and ways we might address:possible responses: 
 1. Color-blind user can't distinguish red-green or blue-yellow spectrums. To address that, the icon colors go into a high contrast mode or pattern overlay helps to distinguish color differences
-2. Vision-impared user may have difficulty reading labels or navigating XR space. To address that, a function could be enabled to allow user to enlarge elements when selected in 3D space.
-3. 
+2. Vision-impaired user may have difficulty reading labels or navigating XR space. To address that, a function could be enabled to allow user to enlarge elements when selected in 3D space
 
 
 HACKATHON SCOPE- goals, constraints and theory of change for open source solution
@@ -60,11 +59,24 @@ APPROACH-based on Design Thinking,
 
 We're taking an accelerated approach to the Hackathon project, based on the Design Thinking methodology. We're also leveragin our team's ast experiences and building on the foundation pf accessibility support for web/mobile established by ADA 508 guidelines and the work of W3C/WAI for web/mobile.
 
-We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs.  
+We beagn by establishing projectgoals/priorities,roles/responsibilities and prefereed communication channels. WE've primarily used face-to face discussions, our X-able Slack channel and GitHUB to share ideas, give updates and share assets.The following is high level view of our daily activities and outputs  
 
-                                 ACTIVITIES                                     OUTPUTS
+                                 ACTIVITIESOUTPUTS                                    
  
-DAY 1                                
+DAY 1 
+       ACTIVITIES:
+       -Pitch problem/solution
+       -Recruit Team 
+       -Define Scope, constraints & priorities
+       -Establish Goals
+       
+       OUTPUTS:
+       -Goals:
+             -Shine a spotlight on expanding digital divide that excludes people of all ages with disabilities from experiencing  XR and                pursuing social, entertainment, educational and career opportunities.
+             -Explore/experiment on ways to close the accessibility gap by extending ADA 508 guidelines and principles to common functions              seen across XR platforms/devices. 
+             -Prototype elements for an open-source toolkit  that helps developers  add accessible features/functionality into current/                future XR experiences.
+             -Demonstrate the use of cross-platform compliant code, supporting for accessibility can transform XR experiences -across                  platforms and devices- for millions of users worldwide.
+
 
 DAY 2
 
@@ -74,8 +86,18 @@ DAY 4
 
 
 GitHUB DELIVERABLE
-(standard  informaton for developers coming out of this project)
 
+Beginnig to draft a resource of standard  informaton for developers coming out of this project
+W3C/WAI categories for accessibility issues:
+--PHYSICAL
+--SPEECH
+--VISUAL
+--AUDITORY
+--COGNITIVE
+--NEUROLOGICAL
+--AGE
+--TEMPORARY DISABILITY
+SITUATIONAL
 
 Assets used:
 --HDRIs: https://hdrihaven.com/hdri/?c=low%20contrast&h=hall_of_finfish
