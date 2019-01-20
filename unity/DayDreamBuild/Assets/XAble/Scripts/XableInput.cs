@@ -28,8 +28,8 @@ public class XableInput : MonoBehaviour
         return (GvrControllerInput.AppButtonUp || Input.GetKeyUp(KeyCode.Space));
     }
 
-    public bool SelectTrigger()
+    public bool CycleActiveObject()
     {
-        return (GvrControllerInput.ClickButtonDown || Input.GetKey(KeyCode.Return));
+        return (GvrControllerInput.ClickButtonDown || Input.GetKeyDown(KeyCode.Tab));
     }
 }

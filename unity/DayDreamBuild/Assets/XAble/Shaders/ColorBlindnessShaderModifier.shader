@@ -8,14 +8,14 @@ Shader "XAble/ColorBlindness"
 		_R("Red Mixing", Color) = (1,0,0,1)
 		_G("Green Mixing", Color) = (0,1,0,1)
 		_B("Blue Mixing", Color) = (0,0,1,1)
-		_DR("DeutMix", Color) = (0.56667, 0.43333, 0, 1)
-		_DG("DeutMix", Color) = (0.55833, 0.44167, 0, 1)
-		_DB("DeutMix", Color) = (0, .24167, 0.75833, 1)
+		_DR("DeutMix R", Color) = (0.56667, 0.43333, 0, 1)
+		_DG("DeutMix G", Color) = (0.55833, 0.44167, 0, 1)
+		_DB("DeutMix D", Color) = (0, .24167, 0.75833, 1)
 		[Toggle(DEUTERANOPIA)]
 		_DeutColorMode("Toggle Deuteranopia", Float) = 0
-		_PR("DeutMix", Color) = (0.56667, 0.43333, 0, 1)
-		_PG("DeutMix", Color) = (0.55833, 0.44167, 0, 1)
-		_PB("DeutMix", Color) = (0, .24167, 0.75833, 1)
+		_PR("ProtanMix R", Color) = (0.56667, 0.43333, 0, 1)
+		_PG("ProtanMix G", Color) = (0.55833, 0.44167, 0, 1)
+		_PB("ProtanMix B", Color) = (0, .24167, 0.75833, 1)
 		[Toggle(PROTANOPIA)]
 		_ProtaColorMode("Toggle Protanopia", Float) = 0
     }

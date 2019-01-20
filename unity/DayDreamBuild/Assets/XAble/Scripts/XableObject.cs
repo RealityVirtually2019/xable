@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cakeslice;
 
 public class XableObject : MonoBehaviour
 {
 
     public string AltText;
     public Texture HighContrast;
+    public bool IsStatic;
     //ColorPallet;
     //AudioFile;
     //Haptics;
@@ -14,26 +16,38 @@ public class XableObject : MonoBehaviour
 
     private XableController xable;
 
+    // definable shader name for colorblind filters
+    public string colorBlindShaderName = "XAble/ColorBlindness";
+
     // Save original when enlarging and/or brining the object close
     private bool enlarged;
     private Vector3 originalPosition;
     private Vector3 originalRotation;
     private Vector3 originalScale;
+    private Renderer renderer;
+
+    private Shader colorBlindShader;
+    private int colorBlindToggle;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         this.xable = Object.FindObjectOfType<XableController>();
+        this.renderer = this.gameObject.GetComponentInChildren<Renderer>();
+        colorBlindShader = Shader.Find(colorBlindShaderName);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
        // Based on the bool flags in the Xable settings, perform different actions on this game object
-       if (this.xable.settings.LowVision)
+       if (this.xable.settings.LowVision  && !IsStatic)
        {
           // TODO: Change this to an event listener based model - this is just for quick testing
-          if (this.xable.input.SelectAction() && this.InFocus())
+          if (this.xable.input.SelectAction() && this.HasFocus())
           {
               this.EnlargeScale();
           }
@@ -42,13 +56,39 @@ public class XableObject : MonoBehaviour
               this.RestoreScale();
           }
        }
+        if (this.xable.settings.ColorBlind)
+        {
+            renderer.material.shader = colorBlindShader;
+        }
+        if (this.xable.settings.ColorBlind)
+        {
+            if (this.xable.input.SelectAction())
+            {
+                colorBlindToggle = (colorBlindToggle == 0) ? 1 : 0;
+                 renderer.material.SetFloat("_ProtaColorMode", colorBlindToggle);
+            }
+
+        }
     }
 
-    bool InFocus()
+    bool HasFocus()
     {
-        // TODO: Come up with a universal way to have one Xable object in focus at a time
-        // This should be similar to the TabFocus HTML attribute in HTML
-        return true;
+        // This is similar to the TabFocus HTML attribute in HTML
+        return (this == this.xable.activeObject);
+    }
+
+    public void Highlight()
+    {
+        if (this.renderer)
+        {
+            this.renderer.gameObject.AddComponent<Outline>();
+        }
+        // TODO: prevent this from adding multiple
+    }
+
+    public void Unhighlight()
+    {
+        Destroy(this.renderer.gameObject.GetComponent<Outline>());
     }
 
     void EnlargeScale()
@@ -56,8 +96,11 @@ public class XableObject : MonoBehaviour
         if (!this.enlarged)
         {
             this.originalScale = this.transform.localScale;
-            Debug.Log(this.originalScale);
-            this.transform.localScale = new Vector3(this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale);
+            this.transform.localScale = new Vector3(
+                this.transform.localScale.x * this.xable.settings.EnlargeScale,
+                this.transform.localScale.y * this.xable.settings.EnlargeScale,
+                this.transform.localScale.z * this.xable.settings.EnlargeScale
+            );
 
             if (this.xable.settings.BringEnlargedClose)
             {
@@ -74,10 +117,11 @@ public class XableObject : MonoBehaviour
                 this.transform.parent = null;
             }
             this.enlarged = true;
+            this.Unhighlight();
         }
     }
 
-    void RestoreScale()
+    public void RestoreScale()
     {
         if (this.enlarged)
         {
@@ -90,6 +134,10 @@ public class XableObject : MonoBehaviour
                 this.transform.eulerAngles = this.originalRotation;
             }
             this.enlarged = false;
+            if (this.HasFocus())
+            {
+                this.Highlight();
+            }
         }
     }
 }
