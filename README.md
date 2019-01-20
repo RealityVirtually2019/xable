@@ -84,20 +84,35 @@ DAY 2  ACTIVITIES:
 
 DAY 3
       ACTIVITIES:
-      -Define scenarios 
+      -Define scenarios
+      
       -Begin prototyping
+      
       -Continue testing
+      
       -Continue documenting 
+      
       -Update devpost; draft video
+      
       -Update GitHUB
 
       OUTPUTS:  defined sample user scenarios;Draft entry in GitHUB; preliminary prototypes/simulations, mulitple small test for low             vision, limited motion, spatial navidgation functions; draft video of one simulation; powerpoint capturing project journey; search         and integrate multiple 3D images
 
 DAY 4
       ACTIVITIES:
-      OUTPUTS:
+      -Final cycles of Iterating/testing
+      -Design set of accessible icons 
+      -Update video, docs, and share 
+      -Focus on final deliverables
+
+      OUTPUTS: final testing/completing simulations; design accessible icons; update GirtHUB README files; final uploads to GitHUB
 
 GitHUB DELIVERABLE
+
+Simulations to be uploaded to GitHUB.
+
+
+
 
 Beginnig to draft a resource of standard  informaton for developers coming out of this project
 W3C/WAI categories for accessibility issues:
