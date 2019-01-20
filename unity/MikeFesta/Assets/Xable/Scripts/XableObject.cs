@@ -14,6 +14,12 @@ public class XableObject : MonoBehaviour
 
     private XableController xable;
 
+    // Save original when enlarging and/or brining the object close
+    private bool enlarged;
+    private Vector3 originalPosition;
+    private Vector3 originalRotation;
+    private Vector3 originalScale;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,12 +53,43 @@ public class XableObject : MonoBehaviour
 
     void EnlargeScale()
     {
-        this.transform.localScale = new Vector3(this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale);
-        // TODO: Center in front of the user
+        if (!this.enlarged)
+        {
+            this.originalScale = this.transform.localScale;
+            Debug.Log(this.originalScale);
+            this.transform.localScale = new Vector3(this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale,this.xable.settings.EnlargeScale);
+
+            if (this.xable.settings.BringEnlargedClose)
+            {
+                // Place the object in front of the camera
+                this.originalPosition = this.transform.position;
+                this.originalRotation = this.transform.eulerAngles;
+
+                this.transform.parent = this.xable.camera.transform;
+                this.transform.localPosition = new Vector3 (0,0,0);
+                // Not going to rotate it for now because it seems to be more natural this way
+                //this.transform.eulerAngles = this.xable.camera.transform.eulerAngles;
+                this.transform.localPosition = Vector3.forward * this.xable.settings.UpcloseDistance;
+                // TODO: The distance should take the object size into account and the upclose distance should be the distance from the edge of the object to the camera
+                this.transform.parent = null;
+            }
+            this.enlarged = true;
+        }
     }
 
     void RestoreScale()
     {
-        this.transform.localScale = new Vector3(1,1,1);
+        if (this.enlarged)
+        {
+            this.transform.localScale = this.originalScale;
+
+            if (this.xable.settings.BringEnlargedClose)
+            {
+                // Restore Location
+                this.transform.position = this.originalPosition;
+                this.transform.eulerAngles = this.originalRotation;
+            }
+            this.enlarged = false;
+        }
     }
 }
