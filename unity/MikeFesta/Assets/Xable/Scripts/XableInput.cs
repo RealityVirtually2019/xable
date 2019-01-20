@@ -13,33 +13,38 @@ public class XableInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //Debug.Log("x: " + GvrControllerInput.TouchPos.x);
     }
 
     // This is where we can abstract input devices to communicate a select action
     public bool SelectAction()
     {
-        return (GvrControllerInput.AppButtonDown || Input.GetKey(KeyCode.Space));
+        return ((GvrControllerInput.ClickButtonDown && GvrControllerInput.TouchPos.x > 0.2 && GvrControllerInput.TouchPos.x < 0.8) || Input.GetKey(KeyCode.LeftControl));
     }
 
     // This is where we can abstract input devices to communicate a deselect action
     public bool DeselectAction()
     {
-        return (GvrControllerInput.AppButtonUp || Input.GetKeyUp(KeyCode.Space));
+        return (GvrControllerInput.ClickButtonUp || Input.GetKeyUp(KeyCode.Space));
     }
 
     public bool CycleActiveObject()
     {
-        return (GvrControllerInput.ClickButtonDown || Input.GetKeyDown(KeyCode.Tab));
+        return (GvrControllerInput.AppButtonUp || Input.GetKeyDown(KeyCode.Tab));
     }
 
     public bool ShowAltTextAction()
     {
-        return Input.GetKey(KeyCode.LeftControl);
+        return ((GvrControllerInput.ClickButtonDown && GvrControllerInput.TouchPos.x > 0.8) || Input.GetKey(KeyCode.LeftControl));
     }
 
     public bool HideAltTextAction()
     {
-        return Input.GetKeyUp(KeyCode.LeftControl);
+        return (GvrControllerInput.ClickButtonUp || Input.GetKeyUp(KeyCode.LeftControl));
+    }
+
+    public bool PlayAudioAction()
+    {
+        return ((GvrControllerInput.ClickButtonDown && GvrControllerInput.TouchPos.x < 0.2) || Input.GetKey(KeyCode.Space));
     }
 }
