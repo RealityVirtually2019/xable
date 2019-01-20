@@ -78,12 +78,20 @@ DAY 1
              -Demonstrate the use of cross-platform compliant code, supporting for accessibility can transform XR experiences -across                  platforms and devices- for millions of users worldwide.
 
 
-DAY 2
+DAY 2  ACTIVITIES:
+       -Brainstorm needs and opportunities
+       -Research features/functionality gaps and impacts
+       -Experiment across platforms & devices 
+       OUTPUTS: Testing with... zoom controls, object outlines; with color contrast patterns shading and strategic color palette; with air        motion controls t adapt to limited motor skills  
+
 
 DAY 3
+      ACTIVITIES:
+      OUTPUTS:
 
 DAY 4
-
+      ACTIVITIES:
+      OUTPUTS:
 
 GitHUB DELIVERABLE
 
