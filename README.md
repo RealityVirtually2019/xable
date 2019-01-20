@@ -11,7 +11,7 @@ We're exploring ways to close the growing accessibility divide within XR by visu
 
 We're keenly aware that there are recurring accessibility issues that may be common across mulitple platorms. If we begin with the most common challenges, then a new XR accessibility baseline could be established. From there, the possibilities are endless. we've brainstormed about these options as well. 
 
-Here are a few examples of accessibility challenges and possible responses: 
+Here are a few examples of the most common accessibility challenges and possible responses: 
 
 CHALLENGE                                                               COMPLIANCE 
 
