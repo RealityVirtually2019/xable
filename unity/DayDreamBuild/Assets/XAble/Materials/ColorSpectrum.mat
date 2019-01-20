@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: ColorSpectrum
   m_Shader: {fileID: 4800000, guid: 0e442ceee431c1c4491d16e44fdff589, type: 3}
-  m_ShaderKeywords: PROTANOPIA _DETAIL_MULX2
+  m_ShaderKeywords: _DETAIL_MULX2
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -40,7 +40,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bcbc0ba751244f84da56fe02b0a69bf6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2b8cd4cf3f22749a9b8e8371a42883c2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -70,7 +70,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _ProtaColorMode: 1
+    - _ProtaColorMode: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
