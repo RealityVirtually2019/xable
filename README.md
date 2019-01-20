@@ -6,13 +6,21 @@ NOTE to ALL: How the cotent in this READEME file is organized
 - PROBLEM- inclusivity issues encountered in XR; compelling data on how many impacted 
 - HACKATHON SCOPE- goals, constraints and theory of change for open source solution
 - APPROACH-based on Design Thinking, inspired by ADA 508 guidelines and W3C/WAI initiative for web/mobile
-- GitHUB DELIVERABLE- standard  informaton for developers cming out of this project
+- GitHUB DELIVERABLE- standard  informaton for developers coming out of this project
 - FUTURE VISION FOR OPEN SOURCE LIBRARY- ideas/concepts teamhas brainstormed that are outside the scop of this project
 
 INTRODUCTION 
-to provide context on WHY... why this project, why now and why this team/why we care.
+(why this project? why now? why this team/why we care?)
+ 
+This team is keenly aware that as XR infiltrates our personal, business, social, and educational lives, there is a swath of the population worldwide that are being left behind, just as they were when web/mobile solutions were first being introduced- before ADA 508 compliance started getting government and commercial entities to pay attention to the needs of the disabled.  
 
-          INSERT DAVID'S STORY...
+Team Background & Motivations
+-- Scott
+-- Jordan
+-- Mike
+-- Susan-is an educator/entrepreneur; previously managed a UX agency in global consulting firm for 10 years,advocated for web/mobile accessibiliy with commercial and govt.clients including US Dept. of Education for 7 years 
+-- Franco
+          
 
 PROBLEM
 inclusivity issues encountered in XR; compelling data on how many impacted
