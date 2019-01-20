@@ -1,4 +1,4 @@
-# X-able: Closing the XR Divide
+# X-able: Closing the XR Accessibility Divide
 
 INTRODUCTION
 
